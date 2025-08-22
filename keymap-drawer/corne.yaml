@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: corne}
 layers:
-  BAS: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, Esc, '$$mdi:apple-keyboard-command$$', LOW, ␣, ⏎, RAI, '$$mdi:apple-keyboard-option$$']
+  BAS: [Esc, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
+    Z, X, C, V, B, N, M, ',', ., /, Esc, '$$mdi:apple-keyboard-command$$', LOW, ␣, ⏎, RAI, ↹]
   LOW:
-  - ↹
+  - Esc
   - '1'
   - '2'
   - '3'
@@ -15,10 +15,10 @@ layers:
   - '9'
   - '0'
   - $$mdi:backspace-outline$$
-  - BT CLR
+  - ''
   - BT 1
   - BT 2
-  - ''
+  - BT 3
   - ''
   - ''
   - ←
@@ -44,9 +44,9 @@ layers:
   - ␣
   - ⏎
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
-  RAI:
   - ↹
+  RAI:
+  - Esc
   - '!'
   - '@'
   - '#'
@@ -73,7 +73,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:led-on$$', h: '$$mdi:page-next-outline$$', type: tap_dance}
   - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
-  - RGB COLOR HSB(191,27,54)
+  - RGB COLOR HSB(280,45,42)
   - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
   - {t: '$$mdi:led-outline$$', s: '$$tabler:brightness-down$$', type: sym_by_sym}
   - _
@@ -87,4 +87,4 @@ layers:
   - ␣
   - ⏎
   - {t: '&studio_unlock', type: held}
-  - $$mdi:apple-keyboard-option$$
+  - ↹
